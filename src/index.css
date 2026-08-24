@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+@layer base {
+  @font-face {
+    font-family: 'Cardonas';
+    src: local('Cardonas'), local('Cardonas-Regular'), local('Cardonas Regular'), local('Cardonas Bold'), local('Cardona');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  :root {
+    --font-brand: 'Cardonas', 'Cardona', 'Syne', 'Outfit', 'Space Grotesk', 'Plus Jakarta Sans', sans-serif;
+    --font-sans: 'Geist', 'Inter Tight', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-display: 'Space Grotesk', 'Geist', sans-serif;
+    --font-mono: 'Geist Mono', 'JetBrains Mono', monospace;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #050505;
+    color: #F5F5F5;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: var(--font-display);
+    letter-spacing: -0.035em;
+  }
+
+  .font-brand {
+    font-family: var(--font-brand);
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11", "ss01", "ss02";
+    letter-spacing: 0.14em;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .font-mono-tech {
+    font-family: var(--font-mono);
+    letter-spacing: 0.2em;
+  }
+}
+
+/* Selection */
+::selection {
+  background-color: #F5F5F5;
+  color: #050505;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Elegant Dark Radial Dot Texture */
+.bg-elegant-dots {
+  background-image: radial-gradient(#F5F5F5 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* Technical grid background */
+.bg-tech-grid {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+}
+
+.bg-tech-grid-dense {
+  background-size: 20px 20px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+}
+

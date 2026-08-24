@@ -1,0 +1,6 @@
+{
+  "name": "ITINA AI",
+  "description": "Intelligence Through Innovation and Neural Automation — Engineering frontier intelligent systems for high-value real-world problem spaces.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
